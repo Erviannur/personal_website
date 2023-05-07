@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="node_modules/three/build/three.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Personal Web | Erviannur Rahmasari</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-ms fixed-top" style="background-color: rgb(39, 3, 66);">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#" >Erviannur Rahmasari</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#organization">Organization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portofolio">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Akhir Navbar -->
+
+    
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <canvas id="myCanvas" style="background-color: #d8afff;" ></canvas>
+        <img src="https://i.ibb.co/TmyJFqd/profil.jpg" alt="Erviannur Rahmasari" width="300"
+        class="rounded-circle img-thumbnail"/>
+        <h1 class="display-4 fw-bold" id="nama" ></h1>
+        <p class="lead">Mahasiswa | Organisator</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,176C320,192,400,192,480,176C560,160,640,128,720,106.7C800,85,880,75,960,101.3C1040,128,1120,192,1200,213.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h1 class="heading1"> About <span> me </span> </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+            <div class="col-md-4">
+              <img src="https://i.ibb.co/R7FGwTX/profil-2.jpg" alt="Erviannur Rahmasari" width="400">
+            </div>
+            <div class="col-md-6 text-start">
+              <h3>Hallo, Saya Erviannur Rahmasari dan saya seorang Organisator</h3>
+              <p>Saya seorang mahasiswa yang saat ini tengah menempuh pendidikan kuliah semester 4 jurusan Teknik Informatika di Politeknik Negeri Banyuwangi. Saya seorang organisator. Saya suka terhadap tantangan dan hal-hal baru.</p>
+              <div class="box-container">
+                <div class="box">
+                  <p> <span> Nama : </span> Erviannur Rahmasari </p>
+                  <p> <span> Umur : </span> 20 Tahun</p>
+                  <p> <span> Bahasa : </span> Indonesia </p>
+                  <p> <span> Kewarganegaraan : </span> Indonesia </p>
+                </div>
+                <div class="box">
+                  <p> <span> Alamat : </span> Kudu, Jombang </p>
+                  <p> <span> Nomor Telepon : </span> 085707811627 </p>
+                  <p> <span> Email : </span> erviannur01@gmail.com </p>
+                  <p> <span> instagram : </span> @viiaaaann_ </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d8afff" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,154.7C320,160,400,192,480,224C560,256,640,288,720,266.7C800,245,880,171,960,165.3C1040,160,1120,224,1200,245.3C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Experience -->
+    <section id="experience"> 
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1 class="heading2"> My <span> Experience </span> </h1>
+          </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Education</h3>
+              <p class="card-text">
+                <p>2020-sekarang</p>
+                <p><b> Teknologi Rekayasa Perangkat Lunak - Politeknik Negeri Banyuwangi </b></p>
+                <p>Rogojampi, Banyuwangi</p>
+                <hr>
+                <p>2017-2020</p>
+                <p><b> MIPA - SMA Negeri Ploso </b></p>
+                <p>Ploso, Jombang</p>
+                <hr>
+                <p>2014-2017</p>
+                <p><b> SMP Negeri Kudu </b></p>
+                <p>Kudu, Jombang</p>
+                <hr>
+                <p>2008-2014</p>
+                <p><b> SD Negeri Kudubanjar 1 </b></p>
+                <p>Kudu, Jombang</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Skills</h3>
+              <p class="card-text">
+                <h6> Microsoft office </h6>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-animated progress-bar-striped " role="progressbar" style="width: 85%; background-color: rgb(39, 3, 66);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+                <br>
+                <h6> Desaign Graphic </h6>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-animated progress-bar-striped " role="progressbar" style="width: 40%; background-color: rgb(39, 3, 66);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+                <br>
+                <h6> Public Speaking </h6>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-animated progress-bar-striped " role="progressbar" style="width: 78%; background-color: rgb(39, 3, 66);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">78%</div>
+                </div>
+                <br>
+                <h6> Copywriting </h6>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-animated progress-bar-striped " role="progressbar" style="width: 85%; background-color: rgb(39, 3, 66);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+                <br>
+                <h6> Web Development </h6>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-animated progress-bar-striped " role="progressbar" style="width: 43%; background-color: rgb(39, 3, 66);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">43%</div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <a href="#project">
+                <h3 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Projects</h3>
+              </a>
+              <p class="card-text">
+                <p > <b>1.</b> Logo </p>
+                <p> <b>2.</b> Limas Segitiga </p>
+                <p><b>3.</b> Avatar </p>
+                <p><b>4.</b> Pemandangan </p>
+                <p><b>5.</b> Objek 3D </p>
+                <p><b>6.</b> Animasi </p>
+                <p><b>7.</b> Compositing & Clipping </p>
+                <p><b>8.</b> Transformasi </p>
+                <p><b>9.</b> Objek Primitif </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="project">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1 class="heading3"> My <span> Project </span> </h1>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Logo</h4>
+                <p class="card-text">
+                  <img src="https://i.ibb.co/9Wy66St/logo.png" class="card-img-top" alt="logo">
+                </p>
+              </div>
+            </div>
+          </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Limas Segitiga</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/0FB7yN8/Limas-Segitiga.png" class="card-img-top" alt="limas">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Avatar</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/9VTVWwg/avatar.png" class="card-img-top" alt="avatar">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Pemandangan</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/YTmqBfN/Pemandangan.png" class="card-img-top" alt="pemandangan">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Objek 3D</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/2gwKct9/objek-3D.png" class="card-img-top" alt="objek3D">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Animasi</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/nQsB6x1/lingkaran-memantul.png" class="card-img-top" alt="lingkaran memantul">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Compositing & Clipping</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/3R9XYhM/Avatar-Animal.png" class="card-img-top" alt="animal">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Transformasi</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/C72STym/Segitiga-Cermin.png" class="card-img-top" alt="segitiga cermin">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center fw-bold" style="color: rgb(39, 3, 66);">Objek Primitif</h4>
+            <p class="card-text">
+              <img src="https://i.ibb.co/tYJgHhp/Jam.png" class="card-img-top" alt="jam">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,128L34.3,160C68.6,192,137,256,206,250.7C274.3,245,343,171,411,154.7C480,139,549,181,617,208C685.7,235,754,245,823,213.3C891.4,181,960,107,1029,106.7C1097.1,107,1166,181,1234,197.3C1302.9,213,1371,171,1406,149.3L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+</section>
+    <!-- Akhir Education & My Skills -->
+    
+    <!-- Organization-->
+    <section id="organization"> 
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1 class="heading4"> Organizational <span> Experience </span> </h1>
+          </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/wgZtXMV/osis.jpg" class="card-img-top" alt="osis">
+            <div class="card-body">
+              <h5 class="card-title">OSIS SMP Negeri Kudu </h5>
+              <p class="card-text">2014-2015</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/8x1hSVZ/mpk.jpg" class="card-img-top" alt="mpk">
+            <div class="card-body">
+              <h5 class="card-title">MPK SMP Negeri Kudu</h5>
+              <p class="card-text">2015-2016</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/4Pqc7Tt/jurnalistik.jpg" class="card-img-top" alt="jurnalistik">
+            <div class="card-body">
+              <h5 class="card-title">Jurnalistik</h5>
+              <p class="card-text">2018-2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/5sKS0B4/rohis.jpg" class="card-img-top" alt="rohis">
+            <div class="card-body">
+              <h5 class="card-title">Kerohanian Islam</h5>
+              <p class="card-text">2018-2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/9s498tm/ippnu.jpg" class="card-img-top" alt="ippnu">
+            <div class="card-body">
+              <h5 class="card-title">IPNU & IPPNU</h5>
+              <p class="card-text">2014-2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/nQ9QLxC/himpunan.jpg" class="card-img-top" alt="hmti">
+            <div class="card-body">
+              <h5 class="card-title">Himpunan Mahasiswa Teknik Informatika</h5>
+              <p class="card-text">2021-sekarang</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://i.ibb.co/98Yzpch/pers.jpg" class="card-img-top" alt="persma">
+            <div class="card-body">
+              <h5 class="card-title">Pers Mahasiswa</h5>
+              <p class="card-text">2021-sekarang</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d8afff" fill-opacity="1" d="M0,64L34.3,106.7C68.6,149,137,235,206,240C274.3,245,343,171,411,149.3C480,128,549,160,617,176C685.7,192,754,192,823,165.3C891.4,139,960,85,1029,80C1097.1,75,1166,117,1234,128C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir Organization-->
+
+    <!-- Portofolio -->
+    <section id="portofolio">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                  <h1 class="heading5"> Portofolio </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/ymTS6TR/01.jpg" class="card-img-top" alt="MC PMK 2022">
+                        <div class="card-body">
+                          <p class="card-text">MC hrai ke-2 pada acara PMK (Pelatihan Manajement Kegiatan) HMTI 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/mXWvmSP/05.jpg" class="card-img-top" alt="Moderator Diklat Ruang HMTI 2022">
+                        <div class="card-body">
+                          <p class="card-text">Terpilih menjadi yang terbaik dalam tugas yang diberikan divisi sofdev kategori instalasi Linux</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/QKwWC7d/03.jpg" class="card-img-top" alt="MC Apel Pembukaan Diklat HMTI 2022">
+                        <div class="card-body">
+                          <p class="card-text">MC apel pembukaan diklat HMTI (Himpunan Mahasiswa Teknik Informatika) 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/0VpXW76/04.jpg" class="card-img-top" alt="Anggota Divisi Medkominfo HMTI 2022">
+                        <div class="card-body">
+                          <p class="card-text">Foto bersama anggota divisi Medkominfo HMTI Periode 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://i.ibb.co/MpLSB94/02.jpg" class="card-img-top" alt="PHP (Pengenalan Harian Prodi) 2021">
+                        <div class="card-body">
+                          <p class="card-text">Moderator pada acara diklat ruang HMTI (Himpunan Mahasiswa Teknik Informatika) 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,288L40,293.3C80,299,160,309,240,288C320,267,400,213,480,197.3C560,181,640,203,720,224C800,245,880,267,960,256C1040,245,1120,203,1200,202.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir Portofolio -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                  <h1 class="heading6"> Contact <span> me </span> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Nama Lengkap</label>
+                          <input type="text" class="form-control" id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(39, 3, 66)" fill-opacity="1" d="M0,224L40,224C80,224,160,224,240,197.3C320,171,400,117,480,128C560,139,640,213,720,218.7C800,224,880,160,960,144C1040,128,1120,160,1200,170.7C1280,181,1360,171,1400,165.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+      <footer class="text-white text-center text-lg-start" style="background-color: rgb(39, 3, 66);">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">About Me</h5>
+            <p>
+              I am Erviannur Rahmasari. I am a 4th semester student majoring in Informatics Engineering
+              Banyuwangi State Polytechnic.
+              I am an organizer and I like to try new challenges and things.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+            <div class="form-outline mb-4">
+              <input type="text" id="formControlLg" class="form-control form-control-lg" placeholder="Search">
+              <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Jombang, Jawa Timur, Indonesia</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">erviannur01@gmail.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">085707811627</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">085707811627</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Social Media</h5>
+
+            <table class="table text-center text-white">
+              <tbody class="font-weight-normal">
+                <div class="mt-4">
+                  <!-- Facebook -->
+                  <a href="https://web.facebook.com/erviyannur.rahma/" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook"></i></a>
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/rvnnrhmsr?t=ThRBKU96Ntrzx9mBBfyzJg&s=08" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                  <!-- Google + -->
+                  <a href="https://mail.google.com/mail/u/0/?tab=km#inbox" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus"></i></a>
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/viiaaaann_/?hl=id" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-instagram"></i></a>
+                  <!-- WhatsApp -->
+                  <a href="https://wa.me/qr/SOPN5EIXUJYNJ1" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-whatsapp"></i></a>
+                  <!-- Github -->
+                  <a href="https://github.com/Erviannur" type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-github"></i></a>
+                </div>
+              </tbody>
+            </table>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://codepen.io/erviannur/">Erviannur Rahmasari</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Akhir Footer -->
+
+     <!-- javascript -->
+    <script type="text/javascript">
+      var i=0, nama;
+      nama = "Erviannur Rahmasari"
+
+      function typing() {
+        if(i<nama.length){
+          document.getElementById("nama").innerHTML += nama.charAt(i);
+          i++;
+          setTimeout(typing,200);
+        }
+      }
+      typing();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,126 @@
+.jumbotron {
+    padding-top: 7rem;
+    background-color: #d8afff;
+}
+
+.about h3{
+    color: #333;
+    font-size: 3.5rem;
+}
+
+.about p{
+    color: #666;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+}
+
+.heading1{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: rgb(39, 3, 66);
+    text-transform: uppercase;
+}
+
+.heading1 span{
+    color: #d8afff;
+    text-transform: uppercase;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+
+.box{
+    flex: 1 1 5rem;
+}
+
+.box span{
+   color: #d8afff;
+}
+
+section {
+    padding-top: 6rem;
+}
+
+#experience {
+    padding-top: 7rem;
+    background-color: #d8afff;
+}
+
+.heading2{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: rgb(39, 3, 66);
+    text-transform: uppercase;
+}
+
+.heading2 span{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: rgb(39, 3, 66);
+    text-transform: uppercase;
+}
+
+.heading3 span{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading4{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: rgb(39, 3, 66);
+    text-transform: uppercase;
+}
+
+.heading4 span{
+    color: #d8afff;
+    text-transform: uppercase;
+}
+
+#portofolio {
+    background-color: #d8afff;
+}
+
+.heading5{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: rgb(39, 3, 66);
+    text-transform: uppercase;
+}
+
+.heading6{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: rgb(39, 3, 66);
+    text-transform: uppercase;
+}
+
+.heading6 span{
+    color: #d8afff;
+    text-transform: uppercase;
+}
+
+#nama{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 100;
+}
